@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>p65</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <h1 id="h1">POR AMOR O POR ERROR!</h1>
+
+<script>
+  addEventListener('DOMContentLoaded',fun,false);
+
+  function fun()
+  {
+    document.getElementById('h1').addEventListener('mouseover',fun1,false);
+    document.getElementById('h1').addEventListener('mouseout',fun2,false);
+  }
+
+  function fun1()
+  {
+    document.getElementById('h1').style.color='#ff0000';
+    document.getElementById('h1').style.backgroundColor='#ffff00';
+  }
+
+  function fun2()
+  {
+    document.getElementById('h1').style.color='#000000';
+    document.getElementById('h1').style.backgroundColor='#ffffff';
+  }
+</script>
+  
+</body>
+</html>
